@@ -35,14 +35,15 @@
 	qcom,gpu-pwrlevels {
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
-			qcom,gpu-freq = <630000000>;
-			qcom,bus-freq = <8>;
-			qcom,bus-min = <7>;
-			qcom,bus-max = <8>;
+			qcom,gpu-freq = <780000000>;
+			qcom,bus-freq = <9>;
+			qcom,bus-min = <8>;
+			qcom,bus-max = <9>;
 		};
 	};
 	qcom,ocmem-bus-client {
 		qcom,msm-bus,vectors-KBps =
+		        <89 662 0 12640000>, /* gpu= 780 */
 			<89 662 0 10080000>, /* gpu= 630 */
 			<89 662 0  8160000>, /* gpu= 510 */
 			<89 662 0  7200000>, /* gpu= 450 */
